@@ -1,6 +1,6 @@
 {
-  "name": "datocms-plugin-stripe-product",
-  "homepage": "https://github.com/jordykoppen/datocms-plugin-stripe-product",
+  "name": "datocms-plugin-stripe-price",
+  "homepage": "https://github.com/jordykoppen/datocms-plugin-stripe-price",
   "version": "0.0.1",
   "description": "A plugin for fetching Stripe Price data from the Stripe API",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "datocms-plugin",
     "field-editor",
     "string-field",
-    "stripe-products",
+    "stripe-price",
     "stripe"
   ],
   "files": [
@@ -37,10 +37,10 @@
       "global": [
         {
           "id": "stripeApiKey",
-          "label": "Stripe API key",
+          "label": "Stripe Secret key",
           "type": "string",
           "required": true,
-          "hint": "Key for fetching products from Stripe"
+          "hint": "Key for fetching prices from Stripe"
         }
       ],
       "instance": []
