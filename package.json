@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-stripe-price",
   "homepage": "https://github.com/jordykoppen/datocms-plugin-stripe-price",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A plugin for fetching Stripe Price data from the Stripe API",
   "main": "index.js",
   "scripts": {
