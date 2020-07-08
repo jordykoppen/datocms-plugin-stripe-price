@@ -4,7 +4,9 @@ A plugin for selecting Stripe Products
 
 ## Configuration
 
-[Describe/screenshot any global/instance parameters this plugin requires]
+Add your Stripe Secret in the plugin's configuration and you're good to go!
+
+The key is located in your Stripe Developers dashboard.
 
 ## Development
 
