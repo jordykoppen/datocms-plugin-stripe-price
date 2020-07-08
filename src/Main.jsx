@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import connectToDatoCms from './connectToDatoCms';
-import './style.sass';
 
 @connectToDatoCms(plugin => ({
   developmentMode: plugin.parameters.global.developmentMode,
@@ -60,7 +59,7 @@ export default class Main extends Component {
     const { value, error } = this.state;
 
     return (
-      <div className="container">
+      <div>
         <input type="text" value={value} placeholder="Price ID" onBlur={() => this.fetchPriceForId(value)} onChange={evt => this.setState({ value: evt.target.value })} />
         { error && <span style={{ color: 'red' }}>Something went wrong. Please check if the supplied ID is correct</span> }
       </div>

@@ -2,7 +2,7 @@
   "name": "datocms-plugin-stripe-product",
   "homepage": "https://github.com/jordykoppen/datocms-plugin-stripe-product",
   "version": "0.0.1",
-  "description": "A plugin for selecting Stripe Products",
+  "description": "A plugin for fetching Stripe Price data from the Stripe API",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --port 5000",
@@ -27,9 +27,7 @@
   "author": "Jordy Koppen <hey@typeau.com>",
   "license": "ISC",
   "datoCmsPlugin": {
-    "title": "Stripe Product",
-    "previewImage": "docs/preview.gif",
-    "coverImage": "docs/cover.png",
+    "title": "Stripe Price",
     "entryPoint": "dist/index.html",
     "pluginType": "field_editor",
     "fieldTypes": [
@@ -37,14 +35,6 @@
     ],
     "parameters": {
       "global": [
-        {
-          "id": "developmentMode",
-          "label": "Development mode",
-          "type": "boolean",
-          "required": true,
-          "default": false,
-          "hint": "Shows debug messages in console"
-        },
         {
           "id": "stripeApiKey",
           "label": "Stripe API key",
